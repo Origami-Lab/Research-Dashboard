@@ -1,0 +1,27 @@
+// @font-face {
+//     font-family: MuseoSans100;
+//     src: url("../../assets/font/Museo/MuseoSans-100.otf") format("opentype");
+// }
+
+:root {
+    /* Common styles */
+    --color-red: #FF0000;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    /* Background colors */
+    --color-bg-main: #FCFCFC;
+    --color-bg-primary: #FFFFFF;
+    /* Typography colors */
+    --color-text-main: #2C2A29;
+    --color-text-secondary: #7B7B7B;
+    --color-border-main: #EAEAEA;
+}
+
+body * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a, span, p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0px;
+}

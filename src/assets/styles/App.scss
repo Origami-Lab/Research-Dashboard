@@ -1,0 +1,51 @@
+@import 'assets/styles/Global.scss';
+
+body {
+    overflow: hidden;
+    /* width */
+    &::-webkit-scrollbar {
+        width: 2px;
+        height: 5px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #F6F6F6; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: gray;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+}
+.switch-wrapper {
+    position: relative;
+}
+
+.scrollbar {
+    /* width */
+      &::-webkit-scrollbar {
+        width: 2px;
+        height: 5px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #F6F6F6; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #D8D8D8;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #D8D8D8; 
+    }
+}
