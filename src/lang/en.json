@@ -1,3 +1,10 @@
 {
-    
+    "dashboard": "Dashboard",
+    "experiments": "Experiments",
+    "protocols": "Protocols",
+    "reports": "Reports",
+    "inventory": "Inventory",
+    "notebook": "Notebook",
+    "Search this workspace": "Search this workspace",
+    "workspace": "Workspace"
 }

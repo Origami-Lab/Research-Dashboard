@@ -37,8 +37,9 @@ class App extends React.Component {
           <BrowserRouter>
             <Switch>
               <Route exact path="/login" component={LoginContainer} />
-              <PrivateRoute path="/dashboard" component={RoutesContainer} />
-              <Redirect from="/" to="/login" />
+              <PrivateRoute path="/lab" component={RoutesContainer} />
+              {/* <Redirect from="/" to="/login" /> */}
+              <Redirect from="/" to="/lab/dashboard" />
             </Switch>
           </BrowserRouter>
         </Provider>

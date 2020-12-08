@@ -10,18 +10,19 @@ const MainLayoutWrapper = styled.div`
   #content-outer {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 50px);
     background-color: var(--color-bg-primary);
 
     .main-wrapper {
       display: flex;
-      width: calc(100% - 213px);
+      width: calc(100% - 200px);
+      height: 100%;
       background-color: var(--color-bg-main);
       overflow: auto;
 
       #content-inner {
         width: 100%;
-        padding: 40px 0px;
+        padding: 32px 35px;
       }
     }
   }
@@ -31,7 +32,7 @@ function MainLayout({ children }) {
   return (
     <MainLayoutWrapper>
       <Header />
-      <div id="content-outer">
+      <div className="flex align-center" id="content-outer">
         <Sidebar />
         <div className="main-wrapper scrollbar">
           <div id="content-inner">{children}</div>

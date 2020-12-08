@@ -7,27 +7,27 @@ import { connectAuth } from 'core';
 import MainLayout from 'containers/Layout/MainLayout';
 import { promisify } from 'utilities';
 
-const DashboardWrapper = styled.div`
+const ReportsWrapper = styled.div`
   @media (max-width: 1023px) {
   }
 `;
 
-function Dashboard({ user, history }) {
+function Reports({ user, history }) {
   return (
     <MainLayout>
-      <DashboardWrapper>
-        Dashboard
-      </DashboardWrapper>
+      <ReportsWrapper>
+        Reports
+      </ReportsWrapper>
     </MainLayout>
   );
 }
 
-Dashboard.propTypes = {
+Reports.propTypes = {
   history: PropTypes.object,
   user: PropTypes.object,
 };
 
-Dashboard.defaultProps = {
+Reports.defaultProps = {
   history: {},
   user: {}
 };
@@ -39,4 +39,4 @@ const mapStateToProps = ({ auth }) => ({
 export default compose(
   withRouter,
   connectAuth(mapStateToProps, undefined)
-)(Dashboard);
+)(Reports);

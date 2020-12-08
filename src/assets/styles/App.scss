@@ -49,3 +49,46 @@ body {
         background: #D8D8D8; 
     }
 }
+
+// Common CSS
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.just-center {
+    justify-content: center;
+}
+
+.just-between {
+    justify-content: space-between;
+}
+
+.just-around {
+    justify-content: space-around;
+}
+
+.just-end {
+    justify-content: flex-end;
+}
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.pointer {
+    cursor: pointer;
+}
+.bold {
+    font-weight: bold;
+}
